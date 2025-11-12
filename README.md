@@ -60,18 +60,18 @@ python3 -m pip --version
 #### Project Setup
 
 ```
-1. Clone the Repositorybash
+1. Clone the Repositorybash or Download Zip to save and UnZip in a Folder for Project
 
 git clone https://github.com/smgdevmain/stringtowallet.git
 cd stringtowallet
 
-2. Create a Virtual Environment (Recommended)On macOS / Linux:bash
+2. Create a Virtual Environment On window / Linux: (create subfolder 'env' in your project)
 python3 -m venv env
 
 Windows:cmd
 python -m venv env
 
-3. Activate the Virtual EnvironmentmacOS / Linux:bash
+3. Activate the Virtual EnvironmentmacOS / Linux: (need activate pip, python first to run)
 source env/bin/activate
 
 Windows:cmd
@@ -79,13 +79,13 @@ source env/bin/activate
 
 You should now see (env) at the start of your terminal prompt.
 
-4. Install Dependenciesbash
+4. Install Dependenciesbash (Install All Library for project)
 
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-requirements.txt includes:
+requirements.txt includes: (If you only run eth, install only 'web3' pip install web3)
 ```
 web3~=7.8.0
 bitcoin-utils~=0.7.3
