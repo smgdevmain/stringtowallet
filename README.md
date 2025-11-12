@@ -37,24 +37,29 @@ This project includes **3 main files**:
 brew install python@3.13
 
 # Or download from python.org
+```
 
 #### Linux (Ubuntu/Debian)
+```
 sudo apt update
 sudo apt install python3 python3-pip python3-venv -y
 
 Verify installation:
 python3 --version
-# or on Windows: python --version
+on Windows:
+python --version
+```
 
-2. Verify pip is Installed
-
+Verify pip is Installed
+```
 pip --version
 # or
 python3 -m pip --version
+```
 
+#### Project Setup
 
-Project Setup
-
+```
 1. Clone the Repositorybash
 
 git clone https://github.com/smgdevmain/stringtowallet.git
@@ -63,13 +68,13 @@ cd stringtowallet
 2. Create a Virtual Environment (Recommended)On macOS / Linux:bash
 python3 -m venv env
 
-On Windows:cmd
+Windows:cmd
 python -m venv env
 
 3. Activate the Virtual EnvironmentmacOS / Linux:bash
 source env/bin/activate
 
-Windows (Command Prompt):cmd
+Windows:cmd
 source env/bin/activate
 
 You should now see (env) at the start of your terminal prompt.
@@ -78,18 +83,21 @@ You should now see (env) at the start of your terminal prompt.
 
 pip install --upgrade pip
 pip install -r requirements.txt
+```
 
 requirements.txt includes:
+```
 web3~=7.8.0
 bitcoin-utils~=0.7.3
 base58~=2.1.1
 solana~=0.36.9
 solders~=0.27.0
 cryptography~46.0.3
+```
 
-UsageRun any wallet generator with a input string:
+#### How to Run
 
-bash
+```
 # Ethereum
 python string_wallet_eth.py
 
@@ -98,3 +106,4 @@ python string_wallet_sol.py
 
 # Bitcoin
 python string_wallet_btc.py
+```
